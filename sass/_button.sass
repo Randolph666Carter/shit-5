@@ -1,0 +1,29 @@
+.button
+  width: 200px
+  height: 45px
+  background: #1ABC9C
+  outline: none
+  border: none
+  box-shadow: 0px 0px 0px 7px rgba(#1ABC9C, 0.5)
+  +rokk
+  font-size: 24px
+  color: #fff
+  text-transform: uppercase
+  overflow: hidden
+  &::before
+    content: ""
+    width: 90px
+    height: 80px
+    background: linear-gradient(to left, rgba(255,255,255, 0.6), rgba(255,255,255, 0.1))
+    opacity: 0.3
+    transform: skewX(-40deg)
+    position: absolute
+    top: -20px
+    left: -150px
+  &:hover
+    cursor: pointer
+    &::before
+      left: 300px
+      transition: 0.7s
+  &:active
+    box-shadow: 0px 0px 0px 7px rgba(#22F6CC, 0.5)
