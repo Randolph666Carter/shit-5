@@ -7,22 +7,31 @@
   <title>Shit 5.0</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link  href="libs/fancybox/jquery.fancybox.min.css" rel="stylesheet">
 </head>
 <body>
   <div class="wrap">
     <header class="main">
       <div class="main__header">
         <a href="#" class="main__header--logo">Randolph_Carter</a>
-        <ul class="main__header--menu">
-          <li class="main__header--item"><a href="#" class="main__header--link">Start</a></li>
-          <!-- /.main__header-menu-item -->
-          <li class="main__header--item"><a href="#" class="main__header--link main__header--link-blue">About me</a></li>
-          <!-- /.main__header-menu-item -->
-          <li class="main__header--item"><a href="#" class="main__header--link">Work</a></li>
-          <!-- /.main__header-menu-item -->
-          <li class="main__header--item"><a href="#" class="main__header--link">Contact</a></li>
-          <!-- /.main__header-menu-item -->
-        </ul>
+        <div class="main__header--burger"><i class="fas fa-hamburger"></i></div>
+        <div class="main__header--menu">
+          <div class="main__header--inner">
+            <ul class="main__header--list">
+              <li class="main__header--item"><a href="#" class="main__header--link">Start</a></li>
+              <!-- /.main__header-menu-item -->
+              <li class="main__header--item"><a href="#" class="main__header--link main__header--link-blue">About me</a></li>
+              <!-- /.main__header-menu-item -->
+              <li class="main__header--item"><a href="#" class="main__header--link">Work</a></li>
+              <!-- /.main__header-menu-item -->
+              <li class="main__header--item"><a href="#" class="main__header--link">Contact</a></li>
+              <!-- /.main__header-menu-item -->
+            </ul>
+            <!-- /.main__header-list -->
+          </div>
+          <!-- /.main__header-inner -->
+          <div class="main__header--close"><i class="far fa-times-circle"></i></div>
+        </div>
         <!-- /.main__header-menu -->
       </div>
       <!-- /.main__header -->
@@ -39,69 +48,69 @@
       <div class="introduction__items introduction__items--long">
         <h2 class="introduction__title introduction__title--big">RAPHAEL LTECHNER</h2>
         <p class="introduction__text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyamm erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
-        </div>
-        <!-- /.introduction__items -->
-        <div class="introduction__inner">
-          <div class="introduction__items introduction__items--small">
+      </div>
+      <!-- /.introduction__items long-->
+      <div class="introduction__inner">
+        <div class="introduction__items introduction__items--small">
             <p class="introduction__img"><i class="far fa-edit"></i></p>
             <span class="introduction__title introduction__title--small">Sketching is fun</span>
             <p class="introduction__text introduction__text--small">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
-            </div>
-            <!-- /.introduction__items -->
-            <div class="introduction__items introduction__items--small">
-              <p class="introduction__img"><i class="fas fa-crosshairs"></i></p>
-              <span class="introduction__title introduction__title--small">Design afterwards</span>
-              <p class="introduction__text introduction__text--small">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
-            </div>
-            <!-- /.introduction__items -->
-            <div class="introduction__items introduction__items--small">
-              <p class="introduction__img"><i class="fab fa-hooli"></i></p>
-              <span class="introduction__title introduction__title--small">Finalize</span>
-              <p class="introduction__text introduction__text--small">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
-            </div>
-            <!-- /.introduction__items -->
-          </div>
-          <!-- /.introduction__inner -->
+        </div>
+        <!-- /.introduction__items -->
+        <div class="introduction__items introduction__items--small">
+            <p class="introduction__img"><i class="fas fa-crosshairs"></i></p>
+            <span class="introduction__title introduction__title--small">Design afterwards</span>
+            <p class="introduction__text introduction__text--small">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+        </div>
+        <!-- /.introduction__items -->
+        <div class="introduction__items introduction__items--small">
+            <p class="introduction__img"><i class="fab fa-hooli"></i></p>
+            <span class="introduction__title introduction__title--small">Finalize</span>
+            <p class="introduction__text introduction__text--small">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+        </div>
+        <!-- /.introduction__items -->
+      </div>
+      <!-- /.introduction__inner -->
     </section>
     <!-- /.introduction -->
     <section class="portfolio">
       <div class="portfolio__wrap">
-        <div class="portfolio__item portfolio__item--first">
-          <div class="portfolio__textplace">
-            <h4 class="portfolio__title">Lorem ipsum dolor sit</h4>
-            <span class="portfolio__subtitle">amet consetetur sadipscing elitr</span>
+        <a class="portfolio__item--box" data-fancybox="gallery" href="img/rally1.jpg">
+          <div class="portfolio__item portfolio__item--first">
+            <div class="portfolio__textplace">
+              <h4 class="portfolio__title">Lorem ipsum dolor sit</h4>
+              <span class="portfolio__subtitle">amet consetetur sadipscing elitr</span>
+            </div>
+            <div class="portfolio__zoom"><i class="fas fa-search-plus"></i></div>
           </div>
-          <!-- /.portfolio__textplace -->
-          <button class="portfolio__zoom"><i class="fas fa-search-plus"></i></button>
-        </div>
-        <!-- /.portfolio__item -->
-        <div class="portfolio__item portfolio__item--second">
-          <div class="portfolio__textplace">
-            <h4 class="portfolio__title">Lorem ipsum dolor sit</h4>
-            <span class="portfolio__subtitle">amet consetetur sadipscing elitr</span>
+        </a>
+        <a class="portfolio__item--box" data-fancybox="gallery" href="img/rally2.jpg">
+          <div class="portfolio__item portfolio__item--second">
+            <div class="portfolio__textplace">
+              <h4 class="portfolio__title">Lorem ipsum dolor sit</h4>
+              <span class="portfolio__subtitle">amet consetetur sadipscing elitr</span>
+            </div>
+            <div class="portfolio__zoom"><i class="fas fa-search-plus"></i></div>
           </div>
-          <!-- /.portfolio__textplace -->
-          <button class="portfolio__zoom"><i class="fas fa-search-plus"></i></button>
-        </div>
-        <!-- /.portfolio__item -->
-        <div class="portfolio__item portfolio__item--three">
-          <div class="portfolio__textplace">
-            <h4 class="portfolio__title">Lorem ipsum dolor sit</h4>
-            <span class="portfolio__subtitle">amet consetetur sadipscing elitr</span>
+        </a>
+        <a class="portfolio__item--box" data-fancybox="gallery" href="img/rally3.jpg">
+          <div class="portfolio__item portfolio__item--three">
+            <div class="portfolio__textplace">
+              <h4 class="portfolio__title">Lorem ipsum dolor sit</h4>
+              <span class="portfolio__subtitle">amet consetetur sadipscing elitr</span>
+            </div>
+            <div class="portfolio__zoom"><i class="fas fa-search-plus"></i></div>
           </div>
-          <!-- /.portfolio__textplace -->
-          <button class="portfolio__zoom"><i class="fas fa-search-plus"></i></button>
-        </div>
-        <!-- /.portfolio__item -->
-        <div class="portfolio__item portfolio__item--four">
-          <div class="portfolio__textplace">
-            <h4 class="portfolio__title">Lorem ipsum dolor sit</h4>
-            <span class="portfolio__subtitle">amet consetetur sadipscing elitr</span>
+        </a>
+        <a class="portfolio__item--box" data-fancybox="gallery" href="img/rally4.jpg">
+          <div class="portfolio__item portfolio__item--four">
+            <div class="portfolio__textplace">
+              <h4 class="portfolio__title">Lorem ipsum dolor sit</h4>
+              <span class="portfolio__subtitle">amet consetetur sadipscing elitr</span>
+            </div>
+            <div class="portfolio__zoom"><i class="fas fa-search-plus"></i></div>
           </div>
-          <!-- /.portfolio__textplace -->
-          <button class="portfolio__zoom"><i class="fas fa-search-plus"></i></button>
-        </div>
-        <!-- /.portfolio__item -->
+        </a>
       </div>
       <!-- /.portfolio__wrap -->
       <button class="button portfolio__button">Viev more</button>
@@ -138,5 +147,26 @@
     <!-- /.footer -->
   </div>
   <!-- /.wrap -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="libs/fancybox/jquery.fancybox.min.js"></script>
+  <script>
+  $(document).ready(function() {
+    $('.main__header--burger').on('click', function() {
+       $('.main__header--menu').toggleClass('main__header--menu-active');
+    });
+    $('.main__header--close').on('click', function() {
+     $('.main__header--menu').toggleClass('main__header--menu-active');
+    });
+    $("a.portfolio__item--box").fancybox({
+		  loop: true,
+      buttons: [
+      "slideShow",
+      "download",
+      "close"
+    ],
+    transitionEffect: "circular",
+	});
+  });
+  </script>
 </body>
 </html>
