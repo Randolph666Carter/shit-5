@@ -352,6 +352,8 @@ body {
     border: none;
     outline: none;
     background: #E4E8E8; }
+    .form__name:focus, .form__mail:focus {
+      outline: 1px solid #1ABC9C; }
   .form__text {
     margin-top: 30px;
     width: 100%;
@@ -361,6 +363,8 @@ body {
     border: none;
     outline: none;
     background: #E4E8E8; }
+    .form__text:focus {
+      outline: 1px solid #1ABC9C; }
   .form__button {
     margin-top: 20px; }
 
