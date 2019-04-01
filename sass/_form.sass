@@ -15,7 +15,7 @@
     margin-top: 20px
     +rokk
     color: $main
-    font-size: 60px
+    font-size: 4.5em
   &__textplace
     width: 100%
     display: flex
@@ -45,3 +45,51 @@
       outline: 1px solid $main
   &__button
     margin-top: 20px
+
+@media (max-width: 750px)
+  .form
+    max-height: 850px
+    &__wrap
+      height: 700px
+    &__textplace
+      flex-flow: column nowrap
+    &__name, &__mail
+      width: 100%
+      margin-top: 30px
+
+@media (max-width: 600px)
+  .form
+    &__title
+      font-size: 3.8em
+
+@media (max-width: 500px)
+  .form
+    &__title
+      font-size: 3.5em
+    &__wrap
+      height: 730px
+
+@media (max-width: 470px)
+  .form
+    &__title
+      font-size: 3em
+
+@media (max-width: 400px)
+  .form
+    &__title
+      font-size: 2.5em
+
+@media (max-width: 350px)
+  .form
+    &__title
+      font-size: 2.2em
+
+@media (max-width: 300px)
+  .form
+    &__title
+      font-size: 2em
+
+@media (max-width: 270px)
+  .form
+    &__title
+      font-size: 1.8em

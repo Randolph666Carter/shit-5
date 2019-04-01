@@ -18,16 +18,15 @@
     height: 340px
     overflow: hidden
     &--long
-      height: 240px
-      margin-top: 100px
       width: 60%
+      margin-top: 100px
     &--small
       width: 30%
   &__title
     +main-bold
     color: $main
     &--big
-      font-size: 36px
+      font-size: 2.2em
       margin-bottom: 40px
     &--small
       display: block
@@ -46,3 +45,80 @@
     font-size: 3.5em
     color: $main
     margin-bottom: 30px
+
+
+@media (max-width: 830px)
+  .introduction
+    min-height: 1250px
+    max-height: 1300px
+    &__inner
+      flex-direction: column
+    &__items
+      height: auto
+      margin-bottom: 20px
+      &--long
+        margin-top: 50px
+        width: 80%
+      &--small
+        width: 100%
+        text-align: center
+    &__title
+      &--small
+        margin-bottom: 10px
+    &__img
+      margin-bottom: 10px
+    &__text
+      text-align: justify
+
+@media (max-width: 680px)
+  .introduction
+    min-height: 1450px
+
+@media (max-width: 600px)
+  .introduction
+    min-height: 1450px
+
+@media (max-width: 550px)
+  .introduction
+    min-height: 1550px
+
+@media (max-width: 500px)
+  .introduction
+    min-height: 1650px
+
+@media (max-width: 450px)
+  .introduction
+    min-height: 1700px
+
+@media (max-width: 400px)
+  .introduction
+    min-height: 1800px
+    &__title
+      &--big
+        font-size: 2.0em
+
+@media (max-width: 370px)
+  .introduction
+    min-height: 1900px
+    &__img
+      font-size: 3.0em
+
+@media (max-width: 330px)
+  .introduction
+    min-height: 2000px
+    &__title
+      &--big
+        font-size: 1.6em
+
+@media (max-width: 300px)
+  .introduction
+    min-height: 2150px
+    &__title
+      &--big
+        font-size: 1.4em
+    &__img
+      font-size: 2.5em
+
+@media (max-width: 280px)
+  .introduction
+    min-height: 2250px

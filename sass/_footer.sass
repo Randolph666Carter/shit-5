@@ -18,10 +18,10 @@
     height: 90px
     background: #fff
     box-shadow: 0px 0px 0px 7px rgba($main, 0.5)
-    font-size: 40px
+    font-size: 3em
     color: $main
     text-align: center
-    padding-top: 20px
+    line-height: 2em
     &:hover
       color: #22F6CC
     &--inner
@@ -38,3 +38,29 @@
     color: #fff
     +rokk
     font-size: 1.3em
+
+
+@media (max-width: 600px)
+  .footer
+    &__social
+      width: 60px
+      height: 60px
+      font-size: 2em
+
+@media (max-width: 440px)
+  .footer
+    &__social
+      width: 40px
+      height: 40px
+      font-size: 1.5em
+      line-height: 1.7em
+
+@media (max-width: 350px)
+  .footer
+    &__social
+      width: 40px
+      height: 40px
+      font-size: 1.5em
+      line-height: 1.7em
+      &--inner
+        width: 70%
