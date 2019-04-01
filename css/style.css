@@ -39,7 +39,11 @@ body {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  overflow: hidden; }
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center; }
 
 .main {
   width: 100%;
