@@ -1,21 +1,20 @@
 .form
   width: 100%
-  height: 120vh
-  max-height: 800px
   background-color: #fff
+  padding: 3.1em 0 9.3em
   &__wrap
     width: 60%
-    height: 600px
+    min-height: 600px
     margin: 0 auto
     display: flex
     flex-direction: column
     justify-content: space-between
     align-items: center
   &__title
-    margin-top: 20px
     +rokk
     color: $main
     font-size: 4.5em
+    text-align: center
   &__textplace
     width: 100%
     display: flex
@@ -26,70 +25,42 @@
   &__name, &__mail
     width: 48%
     height: 75px
-    padding: 30px
+    padding: 1.8em
     border: none
     outline: none
     background: #E4E8E8
     &:focus
       outline: 1px solid $main
   &__text
-    margin-top: 30px
+    margin-top: 1.8em
     width: 100%
     height: 250px
     resize: none
-    padding: 30px
+    padding: 1.8em
     border: none
     outline: none
     background: #E4E8E8
     &:focus
       outline: 1px solid $main
-  &__button
-    margin-top: 20px
 
 @media (max-width: 750px)
   .form
-    max-height: 850px
     &__wrap
-      height: 700px
+      width: 80%
+      min-height: 700px
+    &__title
+      font-size: 4em
     &__textplace
       flex-flow: column nowrap
     &__name, &__mail
       width: 100%
-      margin-top: 30px
+      margin-bottom: 1.8em
+    &__text
+      margin-top: 0
 
-@media (max-width: 600px)
+@media (max-width: 425px)
   .form
-    &__title
-      font-size: 3.8em
-
-@media (max-width: 500px)
-  .form
-    &__title
-      font-size: 3.5em
     &__wrap
-      height: 730px
-
-@media (max-width: 470px)
-  .form
-    &__title
-      font-size: 3em
-
-@media (max-width: 400px)
-  .form
+      width: 90%
     &__title
       font-size: 2.5em
-
-@media (max-width: 350px)
-  .form
-    &__title
-      font-size: 2.2em
-
-@media (max-width: 300px)
-  .form
-    &__title
-      font-size: 2em
-
-@media (max-width: 270px)
-  .form
-    &__title
-      font-size: 1.8em
