@@ -1,0 +1,35 @@
+::-webkit-scrollbar
+  width: 8px
+  border-radius: 5px
+  box-shadow: inset 0px 0px 4px rgba(0,0,0,0.3)
+  background-color: rgba(#E54363, 0.5)
+
+::-webkit-scrollbar-thumb
+  width: 8px
+  border-radius: 5px
+  box-shadow: inset 0px 0px 4px rgba(0,0,0,0.4)
+  background-color: $main
+
+.scroll-up
+  position: fixed
+  z-index: 9999
+  bottom: 50px
+  right: 120px
+  display: none
+  width: 35px
+  height: 35px
+  box-shadow: 0px 0px 0px 5px #FF8EA5
+  background: #fff
+  &::before
+    content: "\f077"
+    font-family: "Font Awesome 5 Free"
+    font-weight: 900
+    display: block
+    text-align: center
+    font-size: 1.5em
+    line-height: 1.45em
+    color: #FF8EA5
+  &:hover
+    cursor: pointer
+  &:hover.scroll-up::before
+    color: $main
