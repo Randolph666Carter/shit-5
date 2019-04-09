@@ -107,6 +107,13 @@
       box-shadow: none
       outline: 1px solid #22F6CC
 
+@media (max-width: 1024px)
+  .portfolio
+    &__item
+      &:hover .portfolio__zoom
+        visibility: hidden
+      &:hover .portfolio__textplace
+        bottom: -100%
 
 @media (max-width: 830px)
   .portfolio
