@@ -13,23 +13,57 @@
 .scroll-up
   position: fixed
   z-index: 9999
-  bottom: 50px
-  right: 120px
+  bottom: 8%
+  right: 10%
   display: none
-  width: 35px
-  height: 35px
-  box-shadow: 0px 0px 0px 5px #FF8EA5
-  background: #fff
+  width: 40px
+  height: 40px
+  background: #FFB0C0
+  border-radius: 50%
+  opacity: 0.8
+  border: 2px solid #FFB0C0
   &::before
     content: "\f077"
     font-family: "Font Awesome 5 Free"
     font-weight: 900
     display: block
     text-align: center
-    font-size: 1.5em
-    line-height: 1.45em
-    color: #FF8EA5
+    font-size: 1.3em
+    line-height: 1.85em
+    color: #fff
   &:hover
     cursor: pointer
+    opacity: 1
+    border-color: $main
   &:hover.scroll-up::before
     color: $main
+
+@media (max-width: 1200px)
+  .scroll-up
+    bottom: 6%
+    right: 5%
+    
+@media (max-width: 1024px)
+  .scroll-up
+    width: 30px
+    height: 30px
+
+    &::before
+      font-size: 1em
+      line-height: 1.5em
+
+@media (max-width: 768px)
+  .scroll-up
+    bottom: 8%
+    right: 3%
+
+
+@media (max-width: 425px)
+  .scroll-up
+    width: 30px
+    height: 30px
+    bottom: 1%
+    right: 2%
+    &::before
+      font-size: 0.7em
+      line-height: 2.3em
