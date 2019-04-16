@@ -35,3 +35,18 @@ $('.scroll-up').click(function(){
     return false;
   });
 });
+
+
+$('.portfolio__button').click(function() {
+	if ($('.portfolio__wrap--hide').is(':visible')) {
+		$('.portfolio__wrap--hide').hide('slow');
+		$(this).html('Viev more');
+	}
+	else {
+		$('.portfolio__wrap--hide').show('slow').css({
+        display : 'flex'
+      }
+    );
+		$(this).html('Hide this');
+	}
+});
