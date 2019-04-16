@@ -494,11 +494,6 @@ body {
             align-items: center; }
     .portfolio__wrap--hide {
       display: none; }
-      .portfolio__wrap--hide--active {
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex; }
   .portfolio__item {
     width: 100%;
     height: 300px;
@@ -643,6 +638,8 @@ body {
     -webkit-flex-flow: column nowrap;
         -ms-flex-flow: column nowrap;
             flex-flow: column nowrap; }
+    .portfolio__wrap--hide {
+      margin-top: 2em; }
   .portfolio__item--box {
     width: 100%; }
   .portfolio__button {
